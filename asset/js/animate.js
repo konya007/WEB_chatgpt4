@@ -27,8 +27,8 @@ inp.onkeyup = (e) => {
 
 }
 var aiosima = new Audio("../asset/js/aiosima.mp3")
-var sus = new Audio("../asset/js/sus.mp3")
-var music = new Audio("../asset/js/music.mp3")
+var sus = new Audio("https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/sus.mp3?v=1680282630615")
+var music = new Audio("https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/music.mp3?v=1680282633721")
 
 
 function catchEvent() {
