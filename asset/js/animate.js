@@ -26,9 +26,9 @@ inp.onkeyup = (e) => {
     }
 
 }
-var aiosima = new Audio("./aiosima.mp3")
-var sus = new Audio("./sus.mp3")
-var music = new Audio("./music.mp3")
+var aiosima = new Audio("../asset/js/aiosima.mp3")
+var sus = new Audio("../asset/js/sus.mp3")
+var music = new Audio("../asset/js/music.mp3")
 
 
 function catchEvent() {
@@ -43,7 +43,7 @@ function catchEvent() {
     setTimeout(() => {
         load.innerHTML = `<img src="./asset/js/loadding6.gif" alt="">
         <span>MỎI CỔ VÌ CHỜ À! <br> CHỜ TIẾP ĐI MÁ!!!</span>`
-        music.volume = .2;
+        music.volume = 0.2;
     }, 10000)
     setTimeout(() => {
         load.innerHTML = `<img src="./asset/js/loadding2.gif" alt="">
