@@ -27,9 +27,19 @@ inp.onkeyup = (e) => {
 
 }
 var aiosima = new Audio("../asset/js/aiosima.mp3")
-var sus = new Audio("https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/sus.mp3")
-var music = new Audio("https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/music.mp3")
+    // var sus = new Audio("https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/sus.mp3")
+    // var music = new Audio("")
+    // var music = new Audio("")
+var sus = new Howl({
+    src: ['https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/sus.mp3'],
+    volume: 1,
 
+});
+var music = new Howl({
+    src: ['https://cdn.glitch.global/0de964e8-6cf3-46f2-be6f-cf3b486d99a5/music.mp3'],
+    volume: 0.1,
+
+});
 
 function catchEvent() {
     music.play()
