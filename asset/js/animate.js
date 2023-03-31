@@ -26,9 +26,9 @@ inp.onkeyup = (e) => {
     }
 
 }
-var aiosima = new Audio("../asset/js/aiosima.mp3")
-var sus = new Audio("../asset/js/sus.mp3")
-var music = new Audio("../asset/js/music.mp3")
+var aiosima = new Audio("./aiosima.mp3")
+var sus = new Audio("./sus.mp3")
+var music = new Audio("./music.mp3")
 
 
 function catchEvent() {
