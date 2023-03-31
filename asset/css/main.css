@@ -164,6 +164,5 @@ h2 {
 #notice>video {
     z-index: 0;
     position: absolute;
-    width: 100vw;
     height: 100vh;
 }
