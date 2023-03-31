@@ -1,0 +1,169 @@
+:root {
+    --bg: ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+#box-screen {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0, #0000003c, #0000003c), url("https://miro.medium.com/v2/resize:fit:1400/1*56BrgQwYF_OLIncPTZLGiw.gif");
+}
+
+#box-chat {
+    backdrop-filter: blur(1px);
+    position: relative;
+    width: 100vw;
+    margin: auto;
+    max-width: 900px;
+    height: 100%;
+    background-color: #ffffff06;
+    border-radius: 30px;
+}
+
+.box-input {
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#input {
+    flex: 1;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    background-color: rgb(39, 39, 39);
+    font-size: 1.1rem;
+    padding-left: 25px;
+    transition: background-color .1s linear;
+}
+
+#input:hover {
+    background-color: rgb(64, 64, 64)
+}
+
+#btn-input {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 166, 255);
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.2rem;
+    padding-left: 13px;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity .1s linear;
+}
+
+#btn-input:hover {
+    opacity: 1;
+}
+
+#welcome-box {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    user-select: none;
+}
+
+#welcome-box>img {
+    border-radius: 20% 50% 20% 50%;
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+}
+
+#text-wel {}
+
+#chattext {
+    transition: all .3s linear;
+    opacity: 0;
+    word-break: break-all;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: fit-content;
+    max-width: 70%;
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+#load {
+    opacity: 0;
+    transition: opacity .1s linear;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+#load>img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#load>span {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#notice {
+    display: none;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#notice>h1 {
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+
+#notice>video {
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
